@@ -1,0 +1,37 @@
+<list>
+  <com.example.ProposalInfo>
+    <orderId>0</orderId>
+    <item>T33</item>
+    <urgency>low</urgency>
+    <premium>0.0</premium>
+    <targetPremium>0.0</targetPremium>
+  </com.example.ProposalInfo>
+  <com.example.ProposalInfo>
+    <orderId>0</orderId>
+    <item>T34</item>
+    <urgency>medium</urgency>
+    <premium>0.0</premium>
+    <targetPremium>0.0</targetPremium>
+  </com.example.ProposalInfo>
+  <com.example.ProposalInfo>
+    <orderId>0</orderId>
+    <item>T45</item>
+    <urgency>medium</urgency>
+    <premium>0.0</premium>
+    <targetPremium>0.0</targetPremium>
+  </com.example.ProposalInfo>
+  <com.example.ProposalInfo>
+    <orderId>0</orderId>
+    <item>T46</item>
+    <urgency>high</urgency>
+    <premium>0.0</premium>
+    <targetPremium>0.0</targetPremium>
+  </com.example.ProposalInfo>
+  <com.example.ProposalInfo>
+    <orderId>0</orderId>
+    <item>T51</item>
+    <urgency>high</urgency>
+    <premium>0.0</premium>
+    <targetPremium>0.0</targetPremium>
+  </com.example.ProposalInfo>
+</list>
