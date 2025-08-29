@@ -29,7 +29,7 @@ public class OrderManagementScript {
         System.out.println("prepareOfferExit: " + supplierInfoOut);
     }
 
-    // Auto Approval Rules
+    // Auto Approval Rules for initiation
     public static void autoApprovalRulesEntry(ProcessContext kcontext) {
         // select the lowest offer
         List<SupplierInfo> suppliersInfoList = (List<SupplierInfo>) kcontext.getVariable("suppliersInfoList");
