@@ -31,7 +31,7 @@ public class OMDemoInit {
 
     final static private int PROBABILITY = 60;
     private static final String userId = "Administrator";
-    private static String processId = "Online-Journey.OM-demo-init";
+    private static String processId = "Online-Journey.order-management";
     private static Random random = new Random(System.currentTimeMillis());
 
     public static void startProcesses(ProcessContext kcontext) {
