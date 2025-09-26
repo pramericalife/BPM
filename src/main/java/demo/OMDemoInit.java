@@ -23,6 +23,11 @@ import org.jbpm.services.api.service.ServiceRegistry;
 import org.kie.api.runtime.process.ProcessContext;
 import org.kie.api.task.model.Task;
 
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 /**
  * OMDemoInit
  */
@@ -33,6 +38,7 @@ public class OMDemoInit {
     private static final String userId = "Administrator";
     private static String processId = "Order-Management.order-management";
     private static Random random = new Random(System.currentTimeMillis());
+    private static String apiUrl = "https://api.pramericalife.in/api/wrapper/cibil-score?proposalNo=AF002535410";
 
     public static void startProcesses(ProcessContext kcontext) {
         String deploymentId = (String) kcontext.getKieRuntime().getEnvironment().get("deploymentId");
@@ -134,6 +140,18 @@ public class OMDemoInit {
             }
         }
         kcontext.setVariable("processInstanceList", piUpdated);
+    }
+
+     public static void testApijBPM() {
+        try {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(apiUrl)).GET().build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println("Status Code: " + response.statusCode());
+        System.out.println("Response Body: " + response.body());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
